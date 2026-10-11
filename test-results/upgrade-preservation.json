@@ -1,0 +1,14 @@
+{
+  "users": true,
+  "teams": true,
+  "challenges": true,
+  "flags": true,
+  "hints": true,
+  "solves": true,
+  "fails": true,
+  "submissions": true,
+  "awards": true,
+  "unlocks": true,
+  "uploads": true,
+  "verifier_state": true
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "stage1/event-original.png",
+    "unchanged": true
+  },
+  {
+    "file": "handouts/northstar_evidence.img",
+    "unchanged": true
+  },
+  {
+    "file": "portal/elias.enc.txt",
+    "unchanged": true
+  },
+  {
+    "file": "portal/training-memo.txt",
+    "unchanged": true
+  },
+  {
+    "file": "organizer/linux-evidence.tar",
+    "unchanged": true
+  },
+  {
+    "file": "linux/manifests/R17.sha256",
+    "unchanged": true
+  }
+]

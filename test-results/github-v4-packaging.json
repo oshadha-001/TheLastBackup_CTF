@@ -1,0 +1,13 @@
+{
+  "tests_passed": 35,
+  "fresh_setup_passed": true,
+  "repeat_setup_preserves_secrets": true,
+  "compose_config_valid": true,
+  "artifacts_matching_v4": 30,
+  "regenerated_style_and_manifest": [
+    "organizer/release-register.json",
+    "stage1/style.css"
+  ],
+  "original_secret_scan_passed": true,
+  "python_files_parsed": 33
+}

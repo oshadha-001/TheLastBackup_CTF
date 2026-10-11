@@ -1,0 +1,235 @@
+{
+  "passed": 57,
+  "failed": 0,
+  "checks": [
+    {
+      "test": "real login replay_qa_",
+      "passed": true
+    },
+    {
+      "test": "real login isolation_qa_",
+      "passed": true
+    },
+    {
+      "test": "anonymous cannot reset",
+      "passed": true
+    },
+    {
+      "test": "CSRF required",
+      "passed": true
+    },
+    {
+      "test": "unsolved stage cannot be replayed",
+      "passed": true
+    },
+    {
+      "test": "locked later competition stage denied",
+      "passed": true
+    },
+    {
+      "test": "wrong official flag",
+      "passed": true
+    },
+    {
+      "test": "correct official flag",
+      "passed": true
+    },
+    {
+      "test": "duplicate official flag stays already solved",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "initial totals exact",
+      "passed": true
+    },
+    {
+      "test": "wrong practice flag",
+      "passed": true
+    },
+    {
+      "test": "correct practice flag",
+      "passed": true
+    },
+    {
+      "test": "competition and practice share five-per-minute limit",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "reset during cooldown allowed independently",
+      "passed": true
+    },
+    {
+      "test": "reset cannot bypass cooldown",
+      "passed": true
+    },
+    {
+      "test": "same stage correct after reset",
+      "passed": true
+    },
+    {
+      "test": "duplicate practice submission rejected",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "lifetime counts survive reset",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "other account has separate totals",
+      "passed": true
+    },
+    {
+      "test": "cannot reset another account via supplied id",
+      "passed": true
+    },
+    {
+      "test": "replay never creates duplicate scoring solve",
+      "passed": true
+    },
+    {
+      "test": "profile contains lifetime record",
+      "passed": true
+    },
+    {
+      "test": "practice page buttons render",
+      "passed": true
+    },
+    {
+      "test": "reset whole practice",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "whole reset updates both counters",
+      "passed": true
+    },
+    {
+      "test": "concurrent guesses atomically limited",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "only evaluated wrong flags counted",
+      "passed": true
+    },
+    {
+      "test": "hourly cap enforced after minute expires",
+      "passed": true
+    },
+    {
+      "test": "next competition stage solves",
+      "passed": true
+    },
+    {
+      "test": "next competition stage solves",
+      "passed": true
+    },
+    {
+      "test": "next competition stage solves",
+      "passed": true
+    },
+    {
+      "test": "next competition stage solves",
+      "passed": true
+    },
+    {
+      "test": "next competition stage solves",
+      "passed": true
+    },
+    {
+      "test": "all six stages available for replay",
+      "passed": true
+    },
+    {
+      "test": "competition score remains 1150",
+      "passed": true
+    },
+    {
+      "test": "bulk resets six unlocked stages",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "per-stage resets reflected",
+      "passed": true
+    },
+    {
+      "test": "malformed submission denied",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "GET cannot change state",
+      "passed": true
+    },
+    {
+      "test": "reset within allowance",
+      "passed": true
+    },
+    {
+      "test": "reset within allowance",
+      "passed": true
+    },
+    {
+      "test": "reset within allowance",
+      "passed": true
+    },
+    {
+      "test": "reset spam limited",
+      "passed": true
+    },
+    {
+      "test": "forged source header cannot bypass account cap",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "stats accessible",
+      "passed": true
+    },
+    {
+      "test": "history import idempotent",
+      "passed": true
+    }
+  ],
+  "test_user": 6
+}

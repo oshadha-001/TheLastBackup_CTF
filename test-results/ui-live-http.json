@@ -1,0 +1,212 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "test": "CTFd homepage responds",
+      "status": "passed"
+    },
+    {
+      "test": "OSINT unique corroborated notice serves Stage 1 flag",
+      "status": "passed"
+    },
+    {
+      "test": "Archive rejects /private/challenge.json",
+      "status": "passed"
+    },
+    {
+      "test": "Archive rejects /build/organizer/challenges.json",
+      "status": "passed"
+    },
+    {
+      "test": "Archive rejects /northstar_evidence.img",
+      "status": "passed"
+    },
+    {
+      "test": "Archive rejects /.env",
+      "status": "passed"
+    },
+    {
+      "test": "Original PNG downloadable",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2 payload recovered from HTTP download",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3 early attachment denied",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3 health",
+      "status": "passed"
+    },
+    {
+      "test": "Portal security headers",
+      "status": "passed"
+    },
+    {
+      "test": "Portal missing CSRF rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Portal wrong evidence rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Correct evidence releases Stage 3 flag",
+      "status": "passed"
+    },
+    {
+      "test": "Independent session remains locked",
+      "status": "passed"
+    },
+    {
+      "test": "Cipher handover released",
+      "status": "passed"
+    },
+    {
+      "test": "Training memo released",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4 cipher solves",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4 checksum matches Stage 5 image",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5 deleted note recovered",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5 timeline correct",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5 manifest checksum matches Stage 6",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier responds",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier rejects invalid token",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier token login",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier wrong answer rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier correct answer returns final flag",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier completion survives another request",
+      "status": "passed"
+    },
+    {
+      "test": "Deployed verifier enforces five attempts per minute",
+      "status": "passed"
+    },
+    {
+      "test": "Four concurrent clients: all 16 pages succeed",
+      "status": "passed"
+    },
+    {
+      "test": "Four concurrent clients: every page under three seconds",
+      "status": "passed"
+    }
+  ],
+  "page_timings": [
+    {
+      "url": "http://localhost:8001/",
+      "status": 200,
+      "seconds": 2.156
+    },
+    {
+      "url": "http://localhost:8081/",
+      "status": 200,
+      "seconds": 2.132
+    },
+    {
+      "url": "http://localhost:8083/",
+      "status": 200,
+      "seconds": 2.098
+    },
+    {
+      "url": "http://localhost:8443/",
+      "status": 200,
+      "seconds": 2.109
+    },
+    {
+      "url": "http://localhost:8001/",
+      "status": 200,
+      "seconds": 2.206
+    },
+    {
+      "url": "http://localhost:8081/",
+      "status": 200,
+      "seconds": 2.156
+    },
+    {
+      "url": "http://localhost:8083/",
+      "status": 200,
+      "seconds": 2.085
+    },
+    {
+      "url": "http://localhost:8443/",
+      "status": 200,
+      "seconds": 2.063
+    },
+    {
+      "url": "http://localhost:8001/",
+      "status": 200,
+      "seconds": 2.295
+    },
+    {
+      "url": "http://localhost:8081/",
+      "status": 200,
+      "seconds": 2.259
+    },
+    {
+      "url": "http://localhost:8083/",
+      "status": 200,
+      "seconds": 2.192
+    },
+    {
+      "url": "http://localhost:8443/",
+      "status": 200,
+      "seconds": 2.106
+    },
+    {
+      "url": "http://localhost:8001/",
+      "status": 200,
+      "seconds": 2.168
+    },
+    {
+      "url": "http://localhost:8081/",
+      "status": 200,
+      "seconds": 2.061
+    },
+    {
+      "url": "http://localhost:8083/",
+      "status": 200,
+      "seconds": 2.052
+    },
+    {
+      "url": "http://localhost:8443/",
+      "status": 200,
+      "seconds": 2.034
+    }
+  ],
+  "maximum_seconds": 2.295
+}

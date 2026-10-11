@@ -1,0 +1,10 @@
+r/r 3:	README.TXT
+r/r 4:	SESSION.LOG
+r/r 5:	AUDIT.JSL
+r/r 6:	RELEASE.CSV
+r/r 7:	EXPORT.LOG
+r/r * 8:	_ANDOVER.TXT
+v/v 2093043:	$MBR
+v/v 2093044:	$FAT1
+v/v 2093045:	$FAT2
+V/V 2093046:	$OrphanFiles

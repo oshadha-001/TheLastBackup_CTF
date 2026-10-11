@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "test": "Live CTFd SQL backup created",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL table matches: users",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL table matches: challenges",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL table matches: flags",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL table matches: hints",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL table matches: submissions",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL table matches: unlocks",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL table matches: pages",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL rows match: users",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL rows match: challenges",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL rows match: flags",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL rows match: hints",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL rows match: submissions",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL rows match: unlocks",
+      "status": "passed"
+    },
+    {
+      "test": "Restored SQL rows match: pages",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier backup integrity",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier backup retains completed test team",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier backup retains demo token record",
+      "status": "passed"
+    },
+    {
+      "test": "CTFd uploads archive saved",
+      "status": "passed"
+    },
+    {
+      "test": "Port 8001 healthy after restart",
+      "status": "passed"
+    },
+    {
+      "test": "Port 8081 healthy after restart",
+      "status": "passed"
+    },
+    {
+      "test": "Port 8083 healthy after restart",
+      "status": "passed"
+    },
+    {
+      "test": "Port 8443 healthy after restart",
+      "status": "passed"
+    },
+    {
+      "test": "CTFd accounts, solves, hint purchases and scores survive restart",
+      "status": "passed"
+    },
+    {
+      "test": "Verifier completion and attempt history survive restart",
+      "status": "passed"
+    },
+    {
+      "test": "Linux scratch resets",
+      "status": "passed"
+    },
+    {
+      "test": "Linux evidence readable",
+      "status": "passed"
+    },
+    {
+      "test": "Linux evidence remains read-only",
+      "status": "passed"
+    },
+    {
+      "test": "Linux scratch writable",
+      "status": "passed"
+    },
+    {
+      "test": "Analyst has no sudo binary",
+      "status": "passed"
+    },
+    {
+      "test": "Trusted route checksum verified through real SSH",
+      "status": "passed"
+    },
+    {
+      "test": "Exactly five player-facing ports",
+      "status": "passed"
+    },
+    {
+      "test": "All published ports bound to loopback only",
+      "status": "passed"
+    },
+    {
+      "test": "Database and Redis not published",
+      "status": "passed"
+    }
+  ],
+  "state_before": {
+    "challenges": 6,
+    "hints": 12,
+    "solves": 11,
+    "test_scores": {
+      "full-test-0438f1a5": 0,
+      "full-test-17bc94bf": 0,
+      "full-test-1be96f50": 715,
+      "full-test-28ef01d8": 0,
+      "full-test-41c57223": 955,
+      "full-test-b02bca17": 0
+    },
+    "unlocks": 22,
+    "users": 7
+  },
+  "state_after": {
+    "challenges": 6,
+    "hints": 12,
+    "solves": 11,
+    "test_scores": {
+      "full-test-0438f1a5": 0,
+      "full-test-17bc94bf": 0,
+      "full-test-1be96f50": 715,
+      "full-test-28ef01d8": 0,
+      "full-test-41c57223": 955,
+      "full-test-b02bca17": 0
+    },
+    "unlocks": 22,
+    "users": 7
+  },
+  "restored_table_counts": {
+    "users": 7,
+    "challenges": 6,
+    "flags": 6,
+    "hints": 12,
+    "submissions": 35,
+    "unlocks": 22,
+    "pages": 1
+  },
+  "published_ports": [
+    {
+      "HostIp": "127.0.0.1",
+      "HostPort": "8001"
+    },
+    {
+      "HostIp": "127.0.0.1",
+      "HostPort": "8081"
+    },
+    {
+      "HostIp": "127.0.0.1",
+      "HostPort": "8083"
+    },
+    {
+      "HostIp": "127.0.0.1",
+      "HostPort": "2222"
+    },
+    {
+      "HostIp": "127.0.0.1",
+      "HostPort": "8443"
+    }
+  ],
+  "images": [
+    {
+      "container": "/last-backup-full-ctfd-1",
+      "image_id": "sha256:9847758cdafc5ab86bdc121353dcf5a27a29ce313587270ee90a71bfbda2b910"
+    },
+    {
+      "container": "/last-backup-full-database-1",
+      "image_id": "sha256:7f22313fc130a377a44999965bcb0a08dd5b21e8502824c1b864f792f9bc66ab"
+    },
+    {
+      "container": "/last-backup-full-cache-1",
+      "image_id": "sha256:858f009f9709ce576febc734aa78b8f6d624b82571f9ddb6bda4377c833b3499"
+    },
+    {
+      "container": "/last-backup-full-archive-1",
+      "image_id": "sha256:30f1c0d78e0ad60901648be663a710bdadf19e4c10ac6782c235200619158284"
+    },
+    {
+      "container": "/last-backup-full-portal-1",
+      "image_id": "sha256:99f49eed556f268172d2e871218d9b6fd1ea0d255993a870f18171c33ad5d400"
+    },
+    {
+      "container": "/last-backup-full-linux-1",
+      "image_id": "sha256:ea03dbb5f61c02b06e9b5ceb089f9c597f44ffee874cdcc3422369c5bed6b243"
+    },
+    {
+      "container": "/last-backup-full-verifier-1",
+      "image_id": "sha256:9c57b571bbfa9f496f529075a55b719ad7130ce8afacb41e8178fa14d4f56274"
+    }
+  ]
+}
