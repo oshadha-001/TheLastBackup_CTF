@@ -1,0 +1,269 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "test": "Player registration through HTTP",
+      "status": "passed"
+    },
+    {
+      "test": "Six challenges and 1150 available points",
+      "status": "passed"
+    },
+    {
+      "test": "Player cannot access admin configuration API",
+      "status": "passed"
+    },
+    {
+      "test": "Final challenge locked before prerequisites",
+      "status": "passed"
+    },
+    {
+      "test": "Correct final flag cannot bypass prerequisites",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: unlocked after preceding solve",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: wrong flag rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: flag case enforced",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: correct flag accepted",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: duplicate does not score",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: hint 1 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: hint 1 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: hint 2 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: hint 2 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 1: cumulative score and hint charges",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: unlocked after preceding solve",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: wrong flag rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: flag case enforced",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: correct flag accepted",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: duplicate does not score",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: hint 3 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: hint 3 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: hint 4 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: hint 4 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 2: cumulative score and hint charges",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: unlocked after preceding solve",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: wrong flag rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: flag case enforced",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: correct flag accepted",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: duplicate does not score",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: hint 5 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: hint 5 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: hint 6 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: hint 6 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 3: cumulative score and hint charges",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: unlocked after preceding solve",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: wrong flag rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: flag case enforced",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: correct flag accepted",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: duplicate does not score",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: hint 7 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: hint 7 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: hint 8 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: hint 8 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 4: cumulative score and hint charges",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: unlocked after preceding solve",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: wrong flag rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: flag case enforced",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: correct flag accepted",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: duplicate does not score",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: hint 9 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: hint 9 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: hint 10 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: hint 10 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 5: cumulative score and hint charges",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: unlocked after preceding solve",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: wrong flag rejected",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: flag case enforced",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: correct flag accepted",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: duplicate does not score",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: hint 11 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: hint 11 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: hint 12 purchase",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: hint 12 content visible",
+      "status": "passed"
+    },
+    {
+      "test": "Stage 6: cumulative score and hint charges",
+      "status": "passed"
+    }
+  ],
+  "test_user": "full-test-23e752bb",
+  "user_id": 8,
+  "score_after_all_hints": 955,
+  "maximum_score": 1150
+}

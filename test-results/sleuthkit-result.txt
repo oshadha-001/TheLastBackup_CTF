@@ -1,0 +1,1 @@
+PASS: Sleuth Kit recovered deleted handover at metadata address 8; bytes match; original image unchanged.

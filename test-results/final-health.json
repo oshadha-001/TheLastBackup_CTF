@@ -1,0 +1,32 @@
+[
+  {
+    "service": "Full CTFd",
+    "url": "http://localhost:8001",
+    "status": 200
+  },
+  {
+    "service": "Stage 1 archive",
+    "url": "http://localhost:8081",
+    "status": 200
+  },
+  {
+    "service": "Stage 3 portal",
+    "url": "http://localhost:8083",
+    "status": 200
+  },
+  {
+    "service": "Stage 6 verifier \u2014 HTTP",
+    "url": "http://localhost:8443",
+    "status": 200
+  },
+  {
+    "service": "Original Stage 1 CTFd",
+    "url": "http://localhost:8000",
+    "status": 200
+  },
+  {
+    "service": "Original Stage 1 archive",
+    "url": "http://localhost:18081",
+    "status": 200
+  }
+]

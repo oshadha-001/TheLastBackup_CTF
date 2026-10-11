@@ -1,0 +1,42 @@
+[
+  {
+    "page": "home",
+    "width": 375,
+    "scrollWidth": 375
+  },
+  {
+    "page": "login",
+    "heading": "The trail is waiting.Pick it up.",
+    "scrollWidth": 375,
+    "title": "The Last Backup",
+    "width": 375
+  },
+  {
+    "page": "register",
+    "heading": "Some recordshide the truth.",
+    "scrollWidth": 375,
+    "title": "The Last Backup",
+    "width": 375
+  },
+  {
+    "page": "archive",
+    "heading": "The missing employee.",
+    "scrollWidth": 375,
+    "title": "The Missing Employee · Northstar Labs",
+    "width": 375
+  },
+  {
+    "page": "portal",
+    "heading": "Someone used her name.",
+    "scrollWidth": 375,
+    "title": "Evidence review · Northstar Labs",
+    "width": 375
+  },
+  {
+    "page": "verifier",
+    "heading": "Verify the exit.Before you trust it.",
+    "scrollWidth": 375,
+    "title": "Backup Verification Console · Northstar Labs",
+    "width": 375
+  }
+]
