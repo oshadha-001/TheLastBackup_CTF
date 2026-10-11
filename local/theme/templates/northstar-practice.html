@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container ns-practice">
+  <p class="ns-kicker">YOUR PERSONAL TRAINING RECORD</p>
+  <h1>Follow the trail. Again.</h1>
+  <p>Replay any stage you have already solved. Each new run records another correct or wrong answer without adding competition points.</p>
+  {% include 'components/practice-stats.html' %}
+  <div class="ns-practice-note"><strong>What does a reset do?</strong><p>It starts a fresh practice attempt. Your points, hints, lifetime record and guessing cooldown stay. Evidence files stay the same. Shared Linux scratch and the team verifier are managed separately by the organizer.</p></div>
+  <p><button type="button" class="btn btn-outline-secondary" id="reset-box" {% if not practice.rows %}disabled{% endif %}>Reset all my practice stages</button> <a class="btn btn-link" href="{{ url_for('users.private') }}">View my profile ↗</a></p>
+  <div id="practice-message" role="status" aria-live="polite"></div>
+  <div class="ns-practice-note" id="reset-confirmation" hidden role="region" aria-label="Confirm practice reset">
+    <p id="reset-question"></p>
+    <button type="button" class="btn btn-primary" id="confirm-reset">Confirm reset</button>
+    <button type="button" class="btn btn-outline-secondary" id="cancel-reset">Cancel</button>
+  </div>
+  <div class="ns-practice-grid">
+  {% for row in practice.rows %}
+    <section class="ns-practice-card" data-challenge="{{ row.id }}">
+      <p class="ns-kicker">PRACTICE RUN {{ row.run }} · {{ 'COMPLETE' if row.complete else 'READY' }}</p>
+      <h2>{{ row.name }}</h2>
+      <p>{{ row.correct }} correct · {{ row.wrong }} wrong · {{ row.reset }} resets</p>
+      <p><a href="{{ url_for('challenges.listing') }}#{{ row.name|urlencode }}-{{ row.id }}">Open stage & evidence ↗</a></p>
+      <form class="practice-submit"><label for="flag-{{ row.id }}">Submit practice flag</label>
+        <input class="form-control" id="flag-{{ row.id }}" name="submission" type="text" maxlength="512" required autocomplete="off" {% if row.complete %}disabled{% endif %}>
+        <button class="btn btn-primary mt-3" {% if row.complete %}disabled{% endif %}>Check flag</button>
+      </form>
+      <button type="button" class="btn btn-outline-secondary mt-3 practice-reset">Reset & replay this stage</button>
+    </section>
+  {% else %}<section class="ns-practice-card"><h2>Your first replay starts with a solve.</h2><p>Complete a stage on the evidence board to unlock it here.</p><a class="btn btn-primary" href="{{ url_for('challenges.listing') }}">Open challenges</a></section>{% endfor %}
+  </div>
+  <p class="mt-4">Flag checks: up to 5 per minute and 30 per hour per account across competition and practice. Shared-address limits also apply. Resetting or signing in again does not clear these limits.</p>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+(() => {
+ const message = document.getElementById('practice-message');
+ const notice = sessionStorage.getItem('northstar-practice-notice');
+ if (notice) { message.textContent = notice; sessionStorage.removeItem('northstar-practice-notice'); }
+ let busy = false;
+ let pendingReset = null;
+ const confirmation = document.getElementById('reset-confirmation');
+ function askReset(action, id, text) {
+   pendingReset = {action, id};
+   document.getElementById('reset-question').textContent = text;
+   confirmation.hidden = false;
+   document.getElementById('confirm-reset').focus();
+ }
+ document.getElementById('cancel-reset').addEventListener('click', () => { confirmation.hidden = true; pendingReset = null; });
+ document.getElementById('confirm-reset').addEventListener('click', () => {
+   if (!pendingReset) return;
+   const next = pendingReset; pendingReset = null; confirmation.hidden = true; act(next.action, next.id);
+ });
+ async function act(action, challenge_id, submission) {
+   if (busy) return;
+   busy = true;
+   message.textContent = 'Working…';
+   try {
+     const response = await fetch({{ url_for('northstar_replay.action')|tojson }}, {
+       method: 'POST', headers: {'Content-Type': 'application/json', 'CSRF-Token': {{ Session.nonce|tojson }}},
+       body: JSON.stringify({action, challenge_id, submission})
+     });
+     const result = await response.json().catch(() => ({}));
+     const text = result.data?.message || `Action could not complete (${response.status}). Reload and try again.`;
+     message.textContent = text;
+     if (response.ok) { sessionStorage.setItem('northstar-practice-notice', text); location.reload(); }
+   } catch (_) { message.textContent = 'Connection lost. Reload to check your saved progress before retrying.'; }
+   finally { busy = false; }
+ }
+ document.querySelectorAll('[data-challenge]').forEach(card => {
+   const id = Number(card.dataset.challenge);
+   card.querySelector('form').addEventListener('submit', e => { e.preventDefault(); act('submit', id, new FormData(e.target).get('submission')); });
+   card.querySelector('.practice-reset').addEventListener('click', () => {
+     askReset('reset', id, 'Start a fresh practice run for this stage? History and competition points are kept.');
+   });
+ });
+ document.getElementById('reset-box').addEventListener('click', () => {
+   askReset('reset_box', null, 'Reset all your unlocked practice stages? This keeps your history, points and cooldown.');
+ });
+})();
+</script>
+{% endblock %}
