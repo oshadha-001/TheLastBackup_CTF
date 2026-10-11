@@ -1,0 +1,4 @@
+Fresh installation access
+Organizer login is generated in local/private/organizer-login.txt by local/prepare.py.
+Issue verifier tokens with manage.py as described in README.md.
+SSH keys are generated in local/private; never upload that folder.
